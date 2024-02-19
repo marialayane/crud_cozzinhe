@@ -1,7 +1,10 @@
+drop database if exists cozzinhe;
+CREATE DATABASE cozzinhe;
+USE cozzinhe;
+
 CREATE TABLE Recipes (
     id_recipes INT PRIMARY KEY,         -- Chave primária para identificar exclusivamente cada receita
     nome VARCHAR(255),                  -- Nome da receita
-    tags VARCHAR(2000),                  -- Tags associadas à receita
     descricao TEXT,                     -- Descrição da receita
     quantity VARCHAR(50)                -- Quantidade do ingrediente necessário para a receita
 );
@@ -21,7 +24,6 @@ CREATE TABLE RecipeIngredients (
 CREATE TABLE cozzinhe_import (
     id INT PRIMARY KEY,
     name VARCHAR(255),
-    tags VARCHAR(2000),
     ingredients TEXT,
     n_ingredients INT
 );
