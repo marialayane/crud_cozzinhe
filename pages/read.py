@@ -1,8 +1,8 @@
 import streamlit as st
-import _mysql_connector
+import mysql.connector
 
 # Função para conectar ao banco de dados MySQL
-connect = _mysql_connector.connect(
+connect = mysql.connector.connect(
             host="127.0.0.1",
             user="root",
             password="123456",
